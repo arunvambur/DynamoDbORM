@@ -1,0 +1,5 @@
+﻿Release 1.0.0
+=============
+- Basic version of DynamoDB
+- Integrated with .net core web api project
+- Included example projects

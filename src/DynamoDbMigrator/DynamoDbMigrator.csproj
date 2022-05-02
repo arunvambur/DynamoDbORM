@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+	<PackAsTool>true</PackAsTool>
+	<ToolCommandName>ddbm</ToolCommandName>
+	<TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>ddbm</AssemblyName>
+    <RootNamespace>DynamoDbMigrator</RootNamespace>
+	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>DynamoDbMigrator</PackageId>
+    <Authors>Arun Venkatesan</Authors>
+    <Company>Cobssoft</Company>
+    <Product>DynamoDbMigrator</Product>
+    <RepositoryUrl></RepositoryUrl>
+	<PackageReleaseNotes>$([System.IO.File]::ReadAllText("$(MSBuildProjectDirectory)/release-notes.txt"))</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommandLineParser" Version="2.8.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DynamoDb\DynamoDb.csproj" />
+  </ItemGroup>
+
+</Project>
