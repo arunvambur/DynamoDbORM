@@ -42,13 +42,13 @@ DynamoDbMigrator tool is published in TU artifactory from this locaion
 
 You can install the tool by the below command,
 
-> dotnet tool install --global --add-source ./DynamoDbMigrator --version [version-no]
+>       dotnet tool install --global --add-source ./DynamoDbMigrator --version [version-no]
 
 Access the dynamodb migrator using the following command,
-> ddbm --version
+>       ddbm --version
 
 Uninstall the tools as follow,
-> dotnet tool uninstall --global DynamoDbMigrator
+>       dotnet tool uninstall --global DynamoDbMigrator
 
 ## DynamoDbMigrator Command Line Reference
 
@@ -90,8 +90,8 @@ The help menu for migrate is shown below,
 >       --version               Display version information.
 
 The help menu for script is shown below,
-C:\Users\arvenka>ddbm script --help
- 
+> C:\Users\arvenka>ddbm script --help
+> 
 >       --type                  Required. Type of script. Use 'ps' for powershell and 'sh' for bash script
 > 
 >       -o, --output            Required. Output path for script file
